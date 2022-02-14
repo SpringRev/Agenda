@@ -1,0 +1,21 @@
+[
+  {
+    "symbol": "LTCUPUSDT",
+    "priceChange": -0.88700000,
+    "priceChangePercent": -6.810,
+    "weightedAvgPrice": 12.25997264,
+    "prevClosePrice": 13.09900000,
+    "lastPrice": 12.13800000,
+    "bidPrice": 12.14400000,
+    "askPrice": 12.21200000,
+    "openPrice": 13.02500000,
+    "highPrice": 13.28600000,
+    "lowPrice": 11.35300000,
+    "volume": 23021.26000000,
+    "openTime": 1603998669849,
+    "closeTime": 1604085069849,
+    "firstId": 15357,
+    "lastId": 16091,
+    "count": 735
+  }
+]

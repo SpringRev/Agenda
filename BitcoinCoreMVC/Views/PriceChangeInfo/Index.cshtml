@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BitcoinCoreMVC.Models.PriceChangeInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Symbol Prices</h2>
+
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Price Change</th>
+            <th>Ask Price</th>
+            <th>Bid Price</th>
+            <th>Low Price</th>
+            <th>High Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @item.symbol
+            </td>
+            <td>
+                @item.priceChange
+            </td>
+            <td>
+                @item.askPrice
+            </td>
+            <td>
+                @item.bidPrice
+            </td>
+            <td>
+                @item.lowPrice
+            </td>
+            <td>
+                @item.highPrice
+            </td>
+            @*<td>
+            @Html.LabelFor(m => m.ElementAt(itemCount).price)
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>*@
+        </tr>
+        }
+    </tbody>
+</table>

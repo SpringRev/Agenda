@@ -1,0 +1,38 @@
+﻿@model IEnumerable<BitcoinCoreMVC.Models.SymbolPrice>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Symbol Prices</h2>
+
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Price</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.symbol
+                </td>
+                <td>
+                    @item.Price
+                </td>
+                @*<td>
+                        @Html.LabelFor(m => m.ElementAt(itemCount).price)
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>*@
+            </tr>
+        }
+    </tbody>
+</table>
