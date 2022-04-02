@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelleryApp", "JewelleryApp\JewelleryApp.csproj", "{11F94B36-E65A-403F-9148-1EDA3535C8E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientJewelleryAppMvc", "ClientJewelleryAppMvc\ClientJewelleryAppMvc.csproj", "{8A4C3EBF-F84A-4883-A38A-9CEBB02DA8E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F94B36-E65A-403F-9148-1EDA3535C8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F94B36-E65A-403F-9148-1EDA3535C8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F94B36-E65A-403F-9148-1EDA3535C8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F94B36-E65A-403F-9148-1EDA3535C8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4C3EBF-F84A-4883-A38A-9CEBB02DA8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4C3EBF-F84A-4883-A38A-9CEBB02DA8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4C3EBF-F84A-4883-A38A-9CEBB02DA8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4C3EBF-F84A-4883-A38A-9CEBB02DA8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAC55017-4E83-4C52-BC3F-D1FAE2383877}
+	EndGlobalSection
+EndGlobal

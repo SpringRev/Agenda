@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebAppli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{0BC1CA22-56E9-4A84-89BF-AC5D29E64541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactApp", "ReactApp\ReactApp.csproj", "{E304B306-030F-4865-A200-C15FE6587CA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactApp", "ReactApp\ReactApp.csproj", "{E304B306-030F-4865-A200-C15FE6587CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNetWithReact", "ASPNetWithReact\ASPNetWithReact.csproj", "{CCFD8F77-D141-4571-B85D-B75F31C9BBD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNetWithReact", "ASPNetWithReact\ASPNetWithReact.csproj", "{CCFD8F77-D141-4571-B85D-B75F31C9BBD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListAlgorithm", "LinkedListAlgorithm\LinkedListAlgorithm.csproj", "{9598BD87-6F93-4BD1-8F5B-EEF9CE28F7C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CCFD8F77-D141-4571-B85D-B75F31C9BBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCFD8F77-D141-4571-B85D-B75F31C9BBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCFD8F77-D141-4571-B85D-B75F31C9BBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9598BD87-6F93-4BD1-8F5B-EEF9CE28F7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9598BD87-6F93-4BD1-8F5B-EEF9CE28F7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9598BD87-6F93-4BD1-8F5B-EEF9CE28F7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9598BD87-6F93-4BD1-8F5B-EEF9CE28F7C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
