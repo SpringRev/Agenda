@@ -22,17 +22,31 @@ namespace JewelleryApp.Models
         public virtual DbSet<Title> Titles { get; set; } = null!;
         public virtual DbSet<ViewListItem> ViewListItems { get; set; } = null!;
 
-//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//        {
-//            if (!optionsBuilder.IsConfigured)
-//            {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Stores;Trusted_Connection=True;");
-//            }
-//        }
+        public virtual DbSet<UserInfo>? UserInfos { get; set; }
+
+        //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //        {
+        //            if (!optionsBuilder.IsConfigured)
+        //            {
+        //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        //                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Stores;Trusted_Connection=True;");
+        //            }
+        //        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<UserInfo>(entity =>
+            {
+                entity.HasNoKey();
+                entity.ToTable("UserInfo");
+                entity.Property(e => e.UserId).HasColumnName("UserId");
+                entity.Property(e => e.DisplayName).HasMaxLength(60).IsUnicode(false);
+                entity.Property(e => e.UserName).HasMaxLength(30).IsUnicode(false);
+                entity.Property(e => e.Email).HasMaxLength(50).IsUnicode(false);
+                entity.Property(e => e.Password).HasMaxLength(20).IsUnicode(false);
+                entity.Property(e => e.CreatedDate).IsUnicode(false);
+            });
+
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.ToTable("CATEGORies");
