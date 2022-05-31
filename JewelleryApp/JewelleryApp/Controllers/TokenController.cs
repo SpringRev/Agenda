@@ -24,6 +24,7 @@ namespace JewelleryApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(UserInfo _userData)
         {
+            // To Test Branch merge
             if (_userData != null && _userData.Email != null && _userData.Password != null)
             {
                 var user = await GetUser(_userData.Email, _userData.Password);
